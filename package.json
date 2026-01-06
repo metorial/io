@@ -1,5 +1,5 @@
 {
-  "name": "@lowerdeck/root",
+  "name": "@metorial-io/root",
   "private": true,
   "scripts": {
     "test": "turbo run --concurrency=1 --ui=stream test",
