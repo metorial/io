@@ -1,0 +1,43 @@
+{
+  "name": "@metorial-io/code-editor",
+  "version": "1.0.0",
+  "author": "Tobias Herber",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src/**",
+    "dist/**",
+    "README.md",
+    "package.json"
+  ],
+  "source": "src/index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "lint": "prettier src/**/*.ts --check",
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@metorial-io/ui": "^1.0.0",
+    "@codemirror/lang-javascript": "^6.2.4",
+    "@codemirror/lang-json": "^6.0.2",
+    "@codemirror/language": "^6.12.1",
+    "@lezer/highlight": "^1.2.3",
+    "@uiw/codemirror-themes": "^4.25.4",
+    "@uiw/react-codemirror": "^4.25.4",
+    "react": "^19.2.3",
+    "@metorial-io/dynamic-component": "^1.0.0"
+  },
+  "devDependencies": {
+    "@metorial-io/tsconfig": "^1.0.0",
+    "typescript": "5.9.3",
+    "vitest": "^4.0.16",
+    "esbuild-plugin-styled-components": "^3.0.1",
+    "tsup": "^8.5.1"
+  }
+}
