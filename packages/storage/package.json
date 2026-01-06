@@ -1,0 +1,35 @@
+{
+  "name": "@metorial-io/storage",
+  "version": "1.0.0",
+  "author": "Tobias Herber",
+  "license": "Apache 2",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src/**",
+    "dist/**",
+    "README.md",
+    "package.json"
+  ],
+  "source": "src/index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "lint": "prettier src/**/*.ts --check",
+    "build": "tsup"
+  },
+  "dependencies": {
+    "idb": "^8.0.0"
+  },
+  "devDependencies": {
+    "@metorial-io/tsconfig": "^1.0.0",
+    "typescript": "5.8.2",
+    "vitest": "^3.1.2",
+    "esbuild-plugin-styled-components": "^3.0.1",
+    "tsup": "^8.4.0"
+  }
+}
