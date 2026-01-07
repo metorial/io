@@ -1,0 +1,32 @@
+import { InlineCopy } from '@metorial-io/ui';
+
+export let ID = ({ id }: { id: string | undefined }) => (
+  <span
+    style={{
+      position: 'relative',
+      width: 'fit-content',
+      paddingRight: 30,
+      fontFamily: 'jetbrains mono, monospace',
+      display: 'inline-flex'
+    }}
+  >
+    <span
+      style={{
+        wordBreak: 'break-all',
+        overflowWrap: 'break-word'
+      }}
+    >
+      {id}
+    </span>
+    <span
+      style={{
+        position: 'absolute',
+        right: 0,
+        top: '50%',
+        transform: 'translateY(-50%)'
+      }}
+    >
+      <InlineCopy value={id} />
+    </span>
+  </span>
+);
