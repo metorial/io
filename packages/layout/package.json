@@ -1,5 +1,5 @@
 {
-  "name": "@metorial-io/ui-product",
+  "name": "@metorial-io/layout",
   "version": "1.0.0",
   "author": "Tobias Herber",
   "license": "Apache 2",
@@ -23,12 +23,15 @@
     "build": "tsup"
   },
   "dependencies": {
+    "@metorial-io/data-hooks": "latest",
     "@metorial-io/ui": "latest",
     "@remixicon/react": "^4.8.0",
-    "copy-to-clipboard": "^3.3.3",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.24.9",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-router-dom": "^7.11.0",
+    "react-use": "^17.6.0",
     "styled-components": "^6.2.0"
   },
   "devDependencies": {
