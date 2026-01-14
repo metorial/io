@@ -19,7 +19,11 @@
   },
   "packageManager": "bun@1.2.15",
   "workspaces": [
+    "docs",
     "packages/*"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "resolutions": {
+    "motion-dom": "^12.25.0"
+  }
 }
